@@ -1,14 +1,19 @@
 from aiogram.utils import executor
 from create_bot import dp
+from pizzabot import sqlite_db
 
 
 async def on_startup(_):
     print("Bot is onlayn")
+    sqlite_db.sql_start()
 
 import client, admin, other
 
 client.register_handlers_client(dp)
+admin.register_handlers_admin(dp)
 other.register_handlers_client(dp)
+
+
 
 
 
