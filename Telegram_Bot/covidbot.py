@@ -2,7 +2,7 @@ import telebot
 import COVID19Py
 
 covid19 = COVID19Py.COVID19()
-bot = telebot.TeleBot('5540024456:AAHmSiGBby6b5I_VuejAQfOFb1js8dA5NP8')
+bot = telebot.TeleBot('')
 
 
 @bot.message_handler(commands=['start'])
