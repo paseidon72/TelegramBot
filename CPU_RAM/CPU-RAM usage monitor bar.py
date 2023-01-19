@@ -13,7 +13,7 @@ class Application(tk.Tk, Configure_widjets):
     def __init__(self):
         """Створити window."""
         tk.Tk.__init__(self)
-        self.attributes('-alpha', 1)
+        self.attributes('-alpha', 0.9)
         self.attributes('-topmost', True)
         self.overrideredirect(True)
         self.resizable(False, False)
